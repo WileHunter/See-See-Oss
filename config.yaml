@@ -1,0 +1,51 @@
+# OSS 文件浏览器配置文件
+
+# 代理配置
+proxy:
+  # 是否启用代理
+  enabled: false
+  # 代理类型：http, socks5
+  type: "http"
+  # 代理服务器地址
+  host: "127.0.0.1"
+  # 代理服务器端口
+  port: 7890
+  # 代理认证（可选）
+  username: ""
+  password: ""
+
+# OSS 配置（示例）
+oss:
+  # 阿里云 OSS
+  aliyun:
+    access_key_id: ""
+    access_key_secret: ""
+    endpoint: "oss-cn-hangzhou.aliyuncs.com"
+    bucket: ""
+  
+  # 腾讯云 COS
+  tencent:
+    secret_id: ""
+    secret_key: ""
+    region: "ap-guangzhou"
+    bucket: ""
+
+# 预览配置
+preview:
+  # 缓存目录
+  cache_dir: "./cache"
+  
+  # 缩略图大小
+  thumbnail_size: [200, 200]
+  
+  # 缩略图视图每页显示数量
+  page_size: 15
+
+# 界面配置
+ui:
+  # 窗口标题
+  title: "See See OSS"
+  # 窗口大小
+  window_size: [1300, 800]
+  # 主题（light/dark）
+  theme: "light"
